@@ -1,0 +1,42 @@
+#ifndef SHOP_H
+#define SHOP_H
+#include "grocery.h"
+#include "database.h"
+#include <iostream>
+#include<sstream>
+#include<fstream>
+#include<vector>
+using namespace std;
+
+class shop:public database,grocery
+{
+public:
+    shop();
+    virtual ~shop();
+    void intro();
+    void show_all();
+    void add_to_cart();
+    void show_match(vector<int>v);
+    vector<int> find_by_cat(string s);
+    vector<int> find_by_name(string s);
+    vector<int> find_under_price(int s);
+    vector<int> find_bigger_price(int s);
+    void search_();
+    void show_cart();
+    void order();
+    int  sign_in(string user,string pass);
+    int sign_up();
+    void read();
+    void write();
+    void println();
+    friend sort();
+                bool comp(grocery &a,grocery &b){
+                return a.ID<b.ID;
+            }
+protected:
+private:
+    vector<grocery>data;
+    vector<int>cart;
+};
+
+#endif // SHOP_H

@@ -1,0 +1,25 @@
+#ifndef GROCERY_H
+#define GROCERY_H
+#include<windows.h>
+#include<time.h>
+#include<string>
+#include<iostream>
+#include<sstream>
+using namespace std;
+class grocery
+{
+    public:
+        grocery();
+        grocery(string cat_,string itm_,int tk);
+        virtual ~grocery();
+        string catagory,itm_nam;
+        int price;
+        int ID;
+        friend istream& operator >> (istream& fin,grocery &A);
+        friend ostream& operator << (ostream& fout,grocery &A);
+        f
+    protected:
+    private:
+};
+
+#endif // GROCERY_H

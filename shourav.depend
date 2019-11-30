@@ -1,0 +1,161 @@
+# depslib dependency file v1.0
+1446667744 source:c:\users\sourav\desktop\project\shourav\main.cpp
+	<iostream>
+
+1529861059 source:c:\users\nuhash\desktop\shourav\main.cpp
+	<iostream>
+	"shop.h"
+
+1529863935 source:c:\users\nuhash\desktop\shourav\src\check_class.cpp
+	"check_class.h"
+
+1529863922 c:\users\nuhash\desktop\shourav\include\check_class.h
+	<string>
+	<iostream>
+
+1529863992 source:c:\users\nuhash\desktop\shourav\src\account.cpp
+	"account.h"
+
+1529863976 c:\users\nuhash\desktop\shourav\include\account.h
+	<string>
+	<fstream>
+	<iostream>
+	"check_class.h"
+
+1529864026 source:c:\users\nuhash\desktop\shourav\src\database.cpp
+	"database.h"
+
+1529862164 c:\users\nuhash\desktop\shourav\include\database.h
+	"account.h"
+	<vector>
+
+1529817959 c:\users\nuhash\desktop\shourav\include\vector.h
+	<math.h>
+
+1529863384 source:c:\users\nuhash\desktop\shourav\src\grocery.cpp
+	"grocery.h"
+
+1529864249 c:\users\nuhash\desktop\shourav\include\grocery.h
+	<windows.h>
+	<time.h>
+	<string>
+	<iostream>
+	<sstream>
+	<algorithm>
+
+1529863407 source:c:\users\nuhash\desktop\shourav\src\shop.cpp
+	"shop.h"
+
+1529864630 c:\users\nuhash\desktop\shourav\include\shop.h
+	"grocery.h"
+	"database.h"
+	<iostream>
+	<sstream>
+	<fstream>
+	<vector>
+
+1529861060 source:f:\shourav\main.cpp
+	<iostream>
+	"shop.h"
+
+1529864632 f:\shourav\include\shop.h
+	"grocery.h"
+	"database.h"
+	<iostream>
+	<sstream>
+	<fstream>
+	<vector>
+
+1529864250 f:\shourav\include\grocery.h
+	<windows.h>
+	<time.h>
+	<string>
+	<iostream>
+	<sstream>
+	<algorithm>
+
+1529862166 f:\shourav\include\database.h
+	"account.h"
+	<vector>
+
+1529863978 f:\shourav\include\account.h
+	<string>
+	<fstream>
+	<iostream>
+	"check_class.h"
+
+1529863924 f:\shourav\include\check_class.h
+	<string>
+	<iostream>
+
+1529863994 source:f:\shourav\src\account.cpp
+	"account.h"
+
+1529863936 source:f:\shourav\src\check_class.cpp
+	"check_class.h"
+
+1529864028 source:f:\shourav\src\database.cpp
+	"database.h"
+
+1529863386 source:f:\shourav\src\grocery.cpp
+	"grocery.h"
+
+1529864662 source:f:\shourav\src\shop.cpp
+	"shop.h"
+
+1529982680 source:c:\users\sourav\desktop\shourav\main.cpp
+	<iostream>
+	"shop.h"
+
+1529983538 c:\users\sourav\desktop\shourav\include\shop.h
+	<iostream>
+	<sstream>
+	<fstream>
+	<vector>
+	"grocery.h"
+	"info.h"
+
+1529982364 c:\users\sourav\desktop\shourav\include\grocery.h
+	<windows.h>
+	<time.h>
+	<string>
+	<iostream>
+	<sstream>
+	<algorithm>
+
+1529917351 c:\users\sourav\desktop\shourav\include\database.h
+	"account.h"
+	<vector>
+
+1529982364 c:\users\sourav\desktop\shourav\include\account.h
+	<string>
+	<fstream>
+	<iostream>
+	"check_class.h"
+
+1529982364 c:\users\sourav\desktop\shourav\include\check_class.h
+	<string>
+	<iostream>
+
+1529982599 source:c:\users\sourav\desktop\shourav\src\account.cpp
+	"account.h"
+
+1529982364 source:c:\users\sourav\desktop\shourav\src\check_class.cpp
+	"check_class.h"
+
+1529864028 source:c:\users\sourav\desktop\shourav\src\database.cpp
+	"database.h"
+
+1529982364 source:c:\users\sourav\desktop\shourav\src\grocery.cpp
+	"grocery.h"
+
+1529982841 source:c:\users\sourav\desktop\shourav\src\shop.cpp
+	"shop.h"
+
+1529982756 c:\users\sourav\desktop\shourav\include\info.h
+	"account.h"
+	<vector>
+
+1529982734 source:c:\users\sourav\desktop\shourav\src\info.cpp
+	"info.h"
+

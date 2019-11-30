@@ -1,0 +1,33 @@
+#include "grocery.h"
+
+grocery::grocery()
+{
+    srand(time(NULL));
+    //ctor
+}
+grocery::grocery(string cat_,string itm_,int tk){
+    catagory=cat_;
+    itm_nam=itm_;
+    price=tk;
+}
+grocery::~grocery()
+{
+    //dtor
+}
+istream& operator >> (istream& fin,grocery &A){
+    cout<<"\t\t\tItem Catagory  Name :: ";
+    fin>>A.catagory;
+    cout<<"\t\t\tItem Name :: ";
+    fin>>A.itm_nam;
+    cout<<"\t\t\tItem Price :: ";
+    fin>>A.price;
+    A.ID=
+    return fin;
+}
+ostream& operator << (ostream& fout,grocery &A){
+    fout<<"\t\t\tItem Catagory :: "<<A.catagory<<endl;
+    fout<<"\t\t\tItem Name :: "<<A.itm_nam<<endl;
+    fout<<"\t\t\tItem Price :: "<<A.price<<endl;
+    fout<<"\t\t\tItem ID :: "<<A.ID<<endl;
+    return fout;
+}

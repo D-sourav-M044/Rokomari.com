@@ -1,0 +1,47 @@
+#include "account.h"
+//string username,mail,password;
+account::account()
+{
+    //ctor
+}
+
+account::~account()
+{
+    //dtor
+}
+istream& operator>>(istream& fin,account &a)
+{
+    check_class c;
+    cout<<"\t\t\tUsername :: ";
+    fin>>a.username;
+    cout<<"\t\t\tName :: ";
+    fin>>a.full;
+xx:
+    cout<<"\t\t\tMail :: ";
+    fin>>a.mail;
+    if(!c.check_mail(a.mail))
+    {
+        cout<<"\t\t\tInvalid Mail | Try again |";
+        goto xx;
+    }
+    cout<<"\t\t\tPassword :: ";
+    fin>>a.password;
+xxx:
+    cout<<"\t\t\tPhone Number :: ";
+    fin>>a.phone;
+    if(!c.check_phone_number(a.phone))
+    {
+        cout<<"\t\t\tInvalid Phone Number | Try Again |";
+        goto xxx;
+    }
+    
+    cout<<"\t\t\tAddress :: ";
+    getline(fin,a.address);
+    return fin;
+}
+ostream& operator<<(ostream& fout,account &a)
+{
+    fout<<"\t\t\tUser Name ::"<<a.username<<"\n\t\t\tMail :: "<<a.mail<<"\n\t\t\t Phone Number :: "<<a.phone<<endl;
+    fout<<"\t\t\t Address :: "<<a.address<<endl;
+    return fout;
+}

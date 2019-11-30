@@ -1,0 +1,148 @@
+# depslib dependency file v1.0
+1529982680 source:c:\users\sourav\desktop\shourav\main.cpp
+	<iostream>
+	"shop.h"
+
+1529983538 c:\users\sourav\desktop\shourav\include\shop.h
+	<iostream>
+	<sstream>
+	<fstream>
+	<vector>
+	"grocery.h"
+	"info.h"
+
+1529982364 c:\users\sourav\desktop\shourav\include\grocery.h
+	<windows.h>
+	<time.h>
+	<string>
+	<iostream>
+	<sstream>
+	<algorithm>
+
+1529982756 c:\users\sourav\desktop\shourav\include\info.h
+	"account.h"
+	<vector>
+
+1529982364 c:\users\sourav\desktop\shourav\include\account.h
+	<string>
+	<fstream>
+	<iostream>
+	"check_class.h"
+
+1529982364 c:\users\sourav\desktop\shourav\include\check_class.h
+	<string>
+	<iostream>
+
+1529982599 source:c:\users\sourav\desktop\shourav\src\account.cpp
+	"account.h"
+
+1529982364 source:c:\users\sourav\desktop\shourav\src\check_class.cpp
+	"check_class.h"
+
+1529982364 source:c:\users\sourav\desktop\shourav\src\grocery.cpp
+	"grocery.h"
+
+1529982734 source:c:\users\sourav\desktop\shourav\src\info.cpp
+	"info.h"
+
+1529983737 source:c:\users\sourav\desktop\shourav\src\shop.cpp
+	"shop.h"
+
+1529982680 source:g:\trial\ltrial\shourav\main.cpp
+	<iostream>
+	"shop.h"
+
+1529983538 g:\trial\ltrial\shourav\include\shop.h
+	<iostream>
+	<sstream>
+	<fstream>
+	<vector>
+	"grocery.h"
+	"info.h"
+
+1529982364 g:\trial\ltrial\shourav\include\grocery.h
+	<windows.h>
+	<time.h>
+	<string>
+	<iostream>
+	<sstream>
+	<algorithm>
+
+1529982756 g:\trial\ltrial\shourav\include\info.h
+	"account.h"
+	<vector>
+
+1529982364 g:\trial\ltrial\shourav\include\account.h
+	<string>
+	<fstream>
+	<iostream>
+	"check_class.h"
+
+1529982364 g:\trial\ltrial\shourav\include\check_class.h
+	<string>
+	<iostream>
+
+1529982599 source:g:\trial\ltrial\shourav\src\account.cpp
+	"account.h"
+
+1529982364 source:g:\trial\ltrial\shourav\src\check_class.cpp
+	"check_class.h"
+
+1529982364 source:g:\trial\ltrial\shourav\src\grocery.cpp
+	"grocery.h"
+
+1529982734 source:g:\trial\ltrial\shourav\src\info.cpp
+	"info.h"
+
+1529983737 source:g:\trial\ltrial\shourav\src\shop.cpp
+	"shop.h"
+
+1529982680 source:c:\users\sourav\desktop\rokomary\main.cpp
+	<iostream>
+	"shop.h"
+
+1529983538 c:\users\sourav\desktop\rokomary\include\shop.h
+	<iostream>
+	<sstream>
+	<fstream>
+	<vector>
+	"grocery.h"
+	"info.h"
+
+1529982364 c:\users\sourav\desktop\rokomary\include\grocery.h
+	<windows.h>
+	<time.h>
+	<string>
+	<iostream>
+	<sstream>
+	<algorithm>
+
+1529982756 c:\users\sourav\desktop\rokomary\include\info.h
+	"account.h"
+	<vector>
+
+1529982364 c:\users\sourav\desktop\rokomary\include\account.h
+	<string>
+	<fstream>
+	<iostream>
+	"check_class.h"
+
+1529982364 c:\users\sourav\desktop\rokomary\include\check_class.h
+	<string>
+	<iostream>
+
+1529982599 source:c:\users\sourav\desktop\rokomary\src\account.cpp
+	"account.h"
+
+1529982364 source:c:\users\sourav\desktop\rokomary\src\check_class.cpp
+	"check_class.h"
+
+1529982364 source:c:\users\sourav\desktop\rokomary\src\grocery.cpp
+	"grocery.h"
+
+1529982734 source:c:\users\sourav\desktop\rokomary\src\info.cpp
+	"info.h"
+
+1529983737 source:c:\users\sourav\desktop\rokomary\src\shop.cpp
+	"shop.h"
+

@@ -1,0 +1,129 @@
+#include "database.h"
+
+database::database()
+{
+    //ctor
+}
+
+database::~database()
+{
+    //dtor
+}
+int database::find_(account a)
+{
+    for(int i=0; i<(int)buffer.size(); i++)
+    {
+        if(a.username==buffer[i].username and a.mail==buffer[i].mail and a.password==buffer[i].password)
+            return i;
+    }
+    return -1;
+}
+int database::find_(string user,string pass)
+{
+    for(int i=0; i<(int)buffer.size(); i++)
+    {
+        if((user==buffer[i].username or user==buffer[i].mail) and pass==buffer[i].password)
+        {
+            return i;
+        }
+    }
+    return -1;
+}
+bool database::register_(account a)
+{
+    for(int i=0; i<(int)buffer.size(); i++)
+    {
+        if(buffer[i].username==a.username)
+        {
+            return 0;
+        }
+    }
+    buffer.push_back(a);
+    return 1;
+}
+void database::read_()
+{
+    ifstream fin("database.txt");
+    account s;
+    while(fin>>s.username)
+    {
+        fin>>s.full>>s.password>>s.phone>>s.mail>>s.address;
+        buffer.push_back(s);
+    }
+    fin.close();
+}
+void database::write_()
+{
+    ofstream fout("database.txt");
+    for(int i=0;i<buffer.size();i++)
+    {
+        cout<<buffer[i].username<<" "<<buffer[i].full<<" "<<buffer[i].password<<" "<<buffer[]
+    }
+}
+void database::update_(int idx)
+{
+    check_class c;
+    int x;
+    string s;
+    cout<<"\t\t\tUpdate Panel"<<endl;
+    while(1)
+    {
+        cout<<"\t\t\t1.Update Name\n";
+        cout<<"\t\t\t2.Update Password\n";
+        cout<<"\t\t\t3.Update Mail\n";
+        cout<<"\t\t\t4.Update Number\n";
+        cout<<"\t\t\t5.Update Address\n";
+        cout<<"\t\t\t6.Exit\n";
+        cout<<"\t\t\tYour Choice :: ";
+        cin>>x;
+        if(x==1)
+        {
+            cout<<"\t\t\t New Name :: ";
+            cin>>s;
+            buffer[idx].full=s;
+        }
+        else if(x==2)
+        {
+            cout<<"\t\t\t New Password :: ";
+            cin>>s;
+            buffer[idx].password=s;
+        }
+        else if(x==3)
+        {
+xy:
+            cout<<"\t\t\t New mail :: ";
+            cin>>s;
+            if(c.check_mail(s))
+                buffer[idx].mail=s;
+            else
+            {
+                cout<<"\t\t\tInvalid Email\t Try Again";
+                goto xy;
+            }
+        }
+        if(x==4)
+        {
+xxy:
+            cout<<"\t\t\t New Number :: ";
+            cin>>s;
+            if(c.check_phone_number(s))
+            {
+                buffer[idx].phone=s;
+            }
+            else
+            {
+                cout<<"\t\t\tInvalid Number\t Try Again";
+                goto xxy;
+            }
+        }
+        if(x==5)
+        {
+            cout<<"\t\t\t New Address :: ";
+            getchar();
+            getline(cin,s);
+            buffer[idx].address=s;
+        }
+        if(x==6)
+            break;
+    }
+}
